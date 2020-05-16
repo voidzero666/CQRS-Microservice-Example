@@ -30,13 +30,13 @@ amqp.connect(MQ_URL, (connectionError, connection) => {
 
           switch (eventType) {
             case 'createResource':
-              customerCreate(example);
+              exampleCreate(example);
               break;
             case 'updateResource':
-              customerUpdate(example);
+              exampleUpdate(example);
               break;
             case 'deleteResource':
-              customerDelete(example);
+              exampleDelete(example);
               break;
             default:
               console.warning('Event Type Unknown');
